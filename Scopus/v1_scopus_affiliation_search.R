@@ -155,10 +155,3 @@ scopus_dedup <- scopus_res_dedup[!duplicated(scopus_res_dedup$Title),] # N = 835
 # Separate into 2021/22
 scopus_dedup_2021 <- subset(scopus_dedup, Pub.Year == 2021) # N = 4252
 scopus_dedup_2022 <- subset(scopus_dedup, Pub.Year == 2022) # N = 4107
-
-
-### EXPORT SCOPUS RESULTS ### -------------------------------------------------------------------
-# Export Scopus dataframes -> csv
-#write.csv(scopus_dedup_2021, "Scopus/V3_results_20240122/Scopus_2021_Results_20240122.csv", row.names = FALSE)
-#write.csv(scopus_dedup_2022, "Scopus/V3_results_20240122/Scopus_2022_Results_20240122.csv", row.names = FALSE)2
-#write.csv(scopus_dedup, "Scopus/V3_results_20240122/Scopus_2021_2022_Results_20240122.csv", row.names = FALSE)
