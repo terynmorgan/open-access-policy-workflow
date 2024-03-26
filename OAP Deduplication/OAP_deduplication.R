@@ -3,13 +3,11 @@ install.packages("pacman")
 pacman::p_load(dplyr, devtools, stringr, ggplot2, ggpolypath, ggvenn, venn)
 
 ### IMPORT DATA ### -----------------------------------------------------------
-scopus_DMAI_dedup <- read.csv("DMAI Deduplication/V2_results_20240123/Scopus_notin_DMAI_20240123.csv")
-lens_DMAI_dedup <- read.csv("DMAI Deduplication/V2_results_20240123/Lens_notin_DMAI_20240123.csv")
-aa_DMAI_dedup <- read.csv("DMAI Deduplication/V2_results_20240123/Academic_Analytics_notin_DMAI_20240123.csv")
-wos_DMAI_dedup <- read.csv("DMAI Deduplication/V2_results_20240123/WoS_notin_DMAI_20240123.csv")
-
+scopus_DMAI_dedup <- read.csv("DMAI Deduplication/Output Files/Scopus_notin_DMAI_20240123.csv")
+lens_DMAI_dedup <- read.csv("DMAI Deduplication/Output Files/Lens_notin_DMAI_20240123.csv")
+aa_DMAI_dedup <- read.csv("DMAI Deduplication/Output Files/Academic_Analytics_notin_DMAI_20240123.csv")
+wos_DMAI_dedup <- read.csv("DMAI Deduplication/Output Files/WoS_notin_DMAI_20240123.csv")
 OAP_dat <- read.csv("OAP Deduplication/OAP_Collection_Export_Processed.csv", na.strings=c("","NA"))
-
 
 # OAP DEDUPLICATION ### ---------------------------------------------------------
 
@@ -68,18 +66,16 @@ Scopus_Lens_AA_WoS_dedup <- Scopus_Lens_AA_WoS_dedup[!duplicated(Scopus_Lens_AA_
 # Convert all titles back to title case then export results
 Scopus_Lens_AA_WoS_dedup$Title <- str_to_title(Scopus_Lens_AA_WoS_dedup$Title) # N = 11137
 
-
 ### EXPORT DEDUP RESULTS ### -------------------------------------------------------------------------------
 
 #Export files from Scopus, Lens, AA outer join with OAP
-#write.csv(OAP_Scopus, "OAP Deduplication/20240202 Results/Scopus_notin_OAP_20240202.csv", row.names = FALSE)
-#write.csv(OAP_Lens, "OAP Deduplication/20240202 Results/Lens_notin_OAP_20240202.csv", row.names = FALSE)
-#write.csv(OAP_AA, "OAP Deduplication/20240202 Results/Academic_Analytics_notin_OAP_20240202.csv", row.names = FALSE)
-#write.csv(OAP_WoS, "OAP Deduplication/20240202 Results/WoS_notin_OAP_20240202.csv", row.names = FALSE)
+write.csv(OAP_Scopus, "OAP Deduplication/20240202 Results/Scopus_notin_OAP_20240202.csv", row.names = FALSE)
+write.csv(OAP_Lens, "OAP Deduplication/20240202 Results/Lens_notin_OAP_20240202.csv", row.names = FALSE)
+write.csv(OAP_AA, "OAP Deduplication/20240202 Results/Academic_Analytics_notin_OAP_20240202.csv", row.names = FALSE)
+write.csv(OAP_WoS, "OAP Deduplication/20240202 Results/WoS_notin_OAP_20240202.csv", row.names = FALSE)
 
 # Export combination results
-#write.csv(Scopus_Lens_AA_WoS_dedup, "OAP Deduplication/20240202 Results/Scopus_Lens_AA_WoS_notin_OAP_20240202.csv", row.names = FALSE)
-
+write.csv(Scopus_Lens_AA_WoS_dedup, "OAP Deduplication/20240202 Results/Scopus_Lens_AA_WoS_notin_OAP_20240202.csv", row.names = FALSE)
 
 ### CREATE DOI/TITLE LISTS ### -----------------------------------------------------------------------
 # Title list for venn comparison
@@ -162,4 +158,3 @@ venn_plot <- venn_plot +
   theme(plot.title = element_text(face="bold", hjust = 0.5, size = 16, margin = margin(b = -15)))
 print(venn_plot)
 dev.off()  
-
