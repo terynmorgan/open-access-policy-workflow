@@ -76,10 +76,6 @@ DMAI_Lens <- two_field_join(DMAI_sep_list, lens_sep_list, "doi", "DOI", "title",
 DMAI_AA <- two_field_join(DMAI_sep_list, aa_affil_sep_list, "doi", "DOI") # N = 8673
 DMAI_WoS <- two_field_join(DMAI_sep_list, wos_sep_list, "doi", "DOI", "title", "Title") # N = 2352
 
-
-
-
-
 ### PREPROCESS RESULTS ### ------------------------------------------------------
 # To combine affils into one result, need same column names/number of columns
 cols <- c("Title", "Journal.Name", "Pub.Year", "DOI", "OA.Flag")
@@ -123,14 +119,12 @@ Scopus_Lens_AA_WoS_dedup <- Scopus_Lens_AA_WoS_dedup[!duplicated(Scopus_Lens_AA_
 # Convert all titles back to title case then export results
 Scopus_Lens_AA_WoS_dedup$Title <- str_to_title(Scopus_Lens_AA_WoS_dedup$Title)
 
-
 ### EXPORT RESULTS ### ----------------------------------------------------------------
 #Export files from Scopus, Lens, AA outer join with DMAI
-#write.csv(DMAI_Scopus, "DMAI Deduplication/V2_results_20240123/Scopus_notin_DMAI_20240123.csv", row.names = FALSE)
-#write.csv(DMAI_Lens, "DMAI Deduplication/V2_results_20240123/Lens_notin_DMAI_20240123.csv", row.names = FALSE)
-#write.csv(DMAI_AA, "DMAI Deduplication/V2_results_20240123/Academic_Analytics_notin_DMAI_20240123.csv", row.names = FALSE)
-#write.csv(DMAI_WoS, "DMAI Deduplication/V2_results_20240123/WoS_notin_DMAI_20240123.csv", row.names = FALSE)
+write.csv(DMAI_Scopus, "DMAI Deduplication/Output Files/Scopus_notin_DMAI_20240123.csv", row.names = FALSE)
+write.csv(DMAI_Lens, "DMAI Deduplication/Output Files/Lens_notin_DMAI_20240123.csv", row.names = FALSE)
+write.csv(DMAI_AA, "DMAI Deduplication/Output Files/Academic_Analytics_notin_DMAI_20240123.csv", row.names = FALSE)
+write.csv(DMAI_WoS, "DMAI Deduplication/Output Files/WoS_notin_DMAI_20240123.csv", row.names = FALSE)
 
 # Export combination results
-#write.csv(Scopus_Lens_AA_WoS_dedup, "DMAI Deduplication/V2_results_20240123/Scopus_Lens_AA_WoS_notin_DMAI_20240123.csv", row.names = FALSE)
-
+write.csv(Scopus_Lens_AA_WoS_dedup, "DMAI Deduplication/Output Files/Scopus_Lens_AA_WoS_notin_DMAI_20240123.csv", row.names = FALSE)
