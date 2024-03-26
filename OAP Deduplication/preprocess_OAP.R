@@ -47,4 +47,4 @@ OAP_dat$dc.title <- paste(OAP_dat$dc.title, OAP_dat$dc.title.en_US., sep = "")
 OAP_dat <- OAP_dat %>% select(1, 2, 4, 6, 9, 12, 14, 16, 19, 22, 25)
 
 ### EXPORT DATA ### --------------------------------------------------------------------
-#write.csv(OAP_dat, "OAP Deduplication/OAP_Collection_Export_Processed.csv", row.names = FALSE)
+write.csv(OAP_dat, "OAP Deduplication/OAP_Collection_Export_Processed.csv", row.names = FALSE)
