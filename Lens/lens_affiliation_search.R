@@ -196,7 +196,7 @@ lens_2021_dedup <- subset(lens_2021_2022_dedup, Pub.Year == "2021") # N = 2113
 lens_2022_dedup <- subset(lens_2021_2022_dedup, Pub.Year == "2022") # N = 3673
 
 ### EXPORT DATA ### ------------------------------------------------------------------------
-#write.csv(lens_2021_dedup, "Lens/Output Files/Lens_2021_Results_20240123.csv", row.names = FALSE)
-#write.csv(lens_2022_dedup, "Lens/Output Files/Lens_2022_Results_20240123.csv", row.names = FALSE)
-#write.csv(lens_2021_2022_dedup, "Lens/Output Files/Lens_2021_2022_Results_20240123.csv", row.names = FALSE)
+write.csv(lens_2021_dedup, "Lens/Output Files/Lens_2021_Results_20240123.csv", row.names = FALSE)
+write.csv(lens_2022_dedup, "Lens/Output Files/Lens_2022_Results_20240123.csv", row.names = FALSE)
+write.csv(lens_2021_2022_dedup, "Lens/Output Files/Lens_2021_2022_Results_20240123.csv", row.names = FALSE)
 
