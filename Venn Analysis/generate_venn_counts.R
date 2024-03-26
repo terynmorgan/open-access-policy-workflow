@@ -5,18 +5,17 @@ pacman::p_load(dplyr, stringr)
 ### IMPORT DATA ### -----------------------------------------------------------
 # Datasets prior to DMAI deduplication
 DMAI_dat <- read.csv("DMAI-2021-2022-compiled-dedup.csv", encoding = "UTF-8")
-scopus_dat <- read.csv("Scopus/V4_results_20240126/Scopus_2021_2022_Results_20240126.csv")
-lens_dat <- read.csv("Lens/V2_results_20240123/Lens_2021_2022_Results_20240123.csv")
+scopus_dat <- read.csv("Scopus/Output Files/Scopus_2021_2022_Results_20240126.csv")
+lens_dat <- read.csv("Lens/Output Files/Lens_2021_2022_Results_20240123.csv")
 aa_dat <- read.csv("Academic Analytics/Output Files/aa_fd_matches_articles_2021_2022.csv")
-wos_dat <- read.csv("WoS/V3_results_20240123/WoS_2021_2022_Results_20240123.csv")
+wos_dat <- read.csv("Web of Science/Output Files/WoS_2021_2022_Results_20240123.csv")
 
 # Datasets after DMAI deduplication
-scopus_DMAI_dedup <- read.csv("DMAI Deduplication/V2_results_20240123/Scopus_notin_DMAI_20240123.csv")
-lens_DMAI_dedup <- read.csv("DMAI Deduplication/V2_results_20240123/Lens_notin_DMAI_20240123.csv")
-aa_DMAI_dedup <- read.csv("DMAI Deduplication/V2_results_20240123/Academic_Analytics_notin_DMAI_20240123.csv")
-wos_DMAI_dedup <- read.csv("DMAI Deduplication/V2_results_20240123/WoS_notin_DMAI_20240123.csv")
+scopus_DMAI_dedup <- read.csv("DMAI Deduplication/Output Files/Scopus_notin_DMAI_20240123.csv")
+lens_DMAI_dedup <- read.csv("DMAI Deduplication/Output Files/Lens_notin_DMAI_20240123.csv")
+aa_DMAI_dedup <- read.csv("DMAI Deduplication/Output Files/Academic_Analytics_notin_DMAI_20240123.csv")
+wos_DMAI_dedup <- read.csv("DMAI Deduplication/Output Files/WoS_notin_DMAI_20240123.csv")
 OAP_dat <- read.csv("OAP Deduplication/OAP_Collection_Export_Processed.csv", na.strings=c("","NA"))
-
 
 ### INNER JOINS CALC ### -------------------------------------------------------------
 # Performs inner join on DOI/Title to count duplicated records between datasets
@@ -105,7 +104,6 @@ fill_affil_matrix <- function(affils_lst, affils_cols, DMAI_bool){
   
   return(affil_mat)
 }
-
 
 # Retrieve inner join counts prior to DMAI deduplication
 DMAI_mat <- fill_affil_matrix(DMAI_lst, affil_cols, TRUE)
