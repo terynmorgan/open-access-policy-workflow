@@ -148,6 +148,6 @@ wos_dedup_2022 <- apply(wos_dedup_2022, 2, as.character) # 2022 records
 
 
 ### EXPORT WOS RESULTS ### ----------------------------------------------------------------
-#write.csv(wos_dedup_2021_2022, "WoS/WoS_2021_2022_Results_20240123.csv", row.names = FALSE)
-#write.csv(wos_dedup_2021, "WoS/WoS_2021_Results_20240123.csv", row.names = FALSE)
-#write.csv(wos_dedup_2022, "WoS/WoS_2022_Results_20240123.csv", row.names = FALSE)
+#write.csv(wos_dedup_2021_2022, "WoS/Output Files/WoS_2021_2022_Results_20240123.csv", row.names = FALSE)
+#write.csv(wos_dedup_2021, "WoS/Output Files/WoS_2021_Results_20240123.csv", row.names = FALSE)
+#write.csv(wos_dedup_2022, "WoS/Output Files/WoS_2022_Results_20240123.csv", row.names = FALSE)
