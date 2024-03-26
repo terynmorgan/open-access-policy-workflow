@@ -177,6 +177,6 @@ scopus_dedup_2022 <- subset(scopus_dedup, Pub.Year == 2022) # N = 4107
 
 ### EXPORT SCOPUS RESULTS ### -------------------------------------------------------------------
 # Export Scopus dataframes -> csv
-#write.csv(scopus_dedup_2021, "Scopus/Output Files/Scopus_2021_Results_20240126.csv", row.names = FALSE)
-#write.csv(scopus_dedup_2022, "Scopus/Output Files//Scopus_2022_Results_20240126.csv", row.names = FALSE)
-#write.csv(scopus_dedup, "Scopus/Output Files/Scopus_2021_2022_Results_20240126.csv", row.names = FALSE)
+write.csv(scopus_dedup_2021, "Scopus/Output Files/Scopus_2021_Results_20240126.csv", row.names = FALSE)
+write.csv(scopus_dedup_2022, "Scopus/Output Files//Scopus_2022_Results_20240126.csv", row.names = FALSE)
+write.csv(scopus_dedup, "Scopus/Output Files/Scopus_2021_2022_Results_20240126.csv", row.names = FALSE)
