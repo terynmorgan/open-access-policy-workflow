@@ -4,10 +4,10 @@ pacman::p_load(ggvenn, venn, ggplot2, ggpolypath)
 
 ### IMPORT DATA ### -----------------------------------------------------------
 DMAI_dat <- read.csv("DMAI-2021-2022-compiled-dedup.csv")
-scopus_dat <- read.csv("Scopus/V4_results_20240126/Scopus_2021_2022_Results_20240126.csv")
-lens_dat <- read.csv("Lens/V2_results_20240123/Lens_2021_2022_Results_20240123.csv")
-aa_affil_dat <- read.csv("Academic Analytics/aa_fd_matches_articles_2021_2022.csv")
-wos_dat <- read.csv("WoS/V3_results_20240123/WoS_2021_2022_Results_20240123.csv")
+scopus_dat <- read.csv("Scopus/Output Files/Scopus_2021_2022_Results_20240126.csv")
+lens_dat <- read.csv("Lens/Output Files/Lens_2021_2022_Results_20240123.csv")
+aa_affil_dat <- read.csv("Academic Analytics/Output Files/aa_fd_matches_articles_2021_2022.csv")
+wos_dat <- read.csv("Web of Science/Output Files/WoS_2021_2022_Results_20240123.csv")
 
 ### SEPARATE DATA BASED ON DOI ### --------------------------------------------
 # Separate each df by records where DOI = NA
@@ -56,7 +56,7 @@ comb_DOI <- list(
 # ggvenn package can only handle 4 sets 
 
 # Venn Diagram between affiliation DOIs where DOI != NA
-png("Venn Analysis/Affiliation_DOI_Venn_Diagram.png")
+png("Venn Analysis/DMAI_results/Affiliation_DOI_Venn_Diagram.png")
 venn_plot <- ggvenn(
   comb_DOI[2:length(comb_DOI)], 
   fill_color = c("#0073C2FF", "#EFC000FF", "#868686FF", "#CD534CFF"),
@@ -72,7 +72,7 @@ dev.off()
 
 
 # Venn Diagram between affiliation Titles without filtration
-png("Venn Analysis/Affiliation_Title_Venn_Diagram.png")
+png("Venn Analysis/DMAI_results/Affiliation_Title_Venn_Diagram.png")
 venn_plot <- ggvenn(
   comb_title[2:length(comb_title)], 
   fill_color = c("#0073C2FF", "#EFC000FF", "#868686FF", "#CD534CFF"),
@@ -87,7 +87,7 @@ dev.off()
 # To show intersection of DMAI, Scopus, Lens, AA, and Wos - need intersection of 5 sets
 
 # Venn Diagram between affiliation DOIs where DOI != NA
-png("Venn Analysis/DMAI_Affiliation_DOI_Venn_Diagram.png")
+png("Venn Analysis/DMAI_results/DMAI_Affiliation_DOI_Venn_Diagram.png")
 venn_plot <- venn(
   comb_DOI, 
   ilabels = "counts", 
@@ -103,7 +103,7 @@ print(venn_plot)
 dev.off()
 
 # Venn Diagram between affiliation Titles
-png("Venn Analysis/DMAI_Affiliation_Title_Venn_Diagram.png")
+png("Venn Analysis/DMAI_results/DMAI_Affiliation_Title_Venn_Diagram.png")
 venn_plot <- venn(
   comb_title, 
   ilabels = "counts", 
@@ -115,6 +115,3 @@ venn_plot <- venn_plot +
                 theme(plot.title = element_text(face="bold", hjust = 0.5, size = 16, margin = margin(b = -15)))
 print(venn_plot)
 dev.off()  
-
-
-
