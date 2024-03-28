@@ -25,10 +25,10 @@ Lens/Output Files/Lens_2022_Results_20240123.csv-> Csv file containing deduplica
 Lens/Output Files/Lens_2021_2022_Results_20240123.csv -> Csv file combining records from 2021/2022 results  
 
 # Results
-Total records before affiliation refinement = 17296 records
+Total records before affiliation refinement = **17296 records**
 - 2021 = 9330 records
 - 2022 = 8283 records 
 
-Total records after affiliation refinement = 5786 records
+Total records after affiliation refinement = **5786 records**
 - 2021 = 2113 records
 - 2022 = 3673 records
