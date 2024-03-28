@@ -11,7 +11,7 @@ library(pacman)
 pacman::p_load(package_name, package_name, ...)
 
 # Input Files
-Lens/lens_affiliation_search -> R script containing commands for analysis 
+Lens/lens_affiliation_search.R -> R script containing commands for analysis 
 
 # Description
 The R script queries the Lens Scholary Works API for articles affiliated with IUPUI. ROR IDs were used for the affiliation search when available. For affiliations without a ROR ID, the Lens UI was used to variations of affiliaton names and those were used in an exact match in the query. Results were filtered for works within 2021-2022 and deduplicated on DOI/Title.
