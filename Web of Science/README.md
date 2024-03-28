@@ -14,7 +14,7 @@ library(pacman)
 pacman::p_load(package_name, package_name, ...)
 
 # Input Files
-Web of Science/wos_affiliation_serach -> R script containing commands for analysis 
+Web of Science/wos_affiliation_search.R -> R script containing commands for analysis 
 
 # Description
 The R script queries the Web of Science Starter API for articles affiliated with IUPUI. Results were filtered for works within 2021-2022 and deduplicated on DOI/Title.
