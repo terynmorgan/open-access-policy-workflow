@@ -20,8 +20,8 @@ The R script queries the Lens Scholary Works API for articles affiliated with IU
 To refine the affiliations kept in the search query, affiliations in Lens/lens_ror_ids.xlsx where Keep? = Yes were included. 
 
 # Output Files
-Lens/Output Files/Lens_2021_Results_20240123.csv -> Csv file containing deduplicated records from the 2021 Lens payload
-Lens/Output Files/Lens_2022_Results_20240123.csv-> Csv file containing deduplicated records from the 2022 Lens payload
+Lens/Output Files/Lens_2021_Results_20240123.csv -> Csv file containing deduplicated records from the 2021 Lens payload  
+Lens/Output Files/Lens_2022_Results_20240123.csv-> Csv file containing deduplicated records from the 2022 Lens payload  
 Lens/Output Files/Lens_2021_2022_Results_20240123.csv -> Csv file combining records from 2021/2022 results  
 
 # Results
