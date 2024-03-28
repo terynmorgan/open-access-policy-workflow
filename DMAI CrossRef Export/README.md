@@ -23,4 +23,6 @@ DMAI CrossRef Export/DMAI-2022-compiled-dedup.csv -> Csv file containing dedupli
 DMAI-2021-2022-compiled-dedup.csv -> Csv file combining 2021 and 2022 DMAI records after CrossRef Lookup
 
 # Results
-Total records for DMAI 2021/2022 = 2952
+Total records for DMAI 2021/2022 = **2952 records**
+- 2021 = 1796 records
+- 2022 = 1155 records 
