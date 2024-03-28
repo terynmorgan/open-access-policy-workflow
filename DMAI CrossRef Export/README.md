@@ -7,7 +7,7 @@ pacman, dplyr, plyr, readr, purrr
 # Installation
 install.packages("pacman")  
 library(pacman)  
-pacman::p_load([package_name], [package_name])
+pacman::p_load(package_name, package_name, ...)
 
 # Input Directories
 DMAI CrossRef Export/DMAI 2021 After CrossRef Lookup -> Directory that contains 27 csv files  
