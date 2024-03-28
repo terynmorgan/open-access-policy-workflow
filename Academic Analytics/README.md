@@ -17,6 +17,6 @@ Academic Analytics/Output Files/aa_fd_matches_articles_2022.csv -> Csv file cont
 Academic Analytics/Output Files/aa_fd_matches_articles_2021_2022.csv -> Csv file combining records from 2021/2022 results  
 
 # Results
-Total records (deduplicated on Title and DOI) = 8921 records
+Total records (deduplicated on Title and DOI) = **8921 records**
 - 2021 = 4607 records
 - 2022 = 4317 records
