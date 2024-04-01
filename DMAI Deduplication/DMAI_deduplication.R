@@ -4,10 +4,10 @@ pacman::p_load(dplyr, devtools, stringr)
 
 ### IMPORT DATA ### -----------------------------------------------------------
 DMAI_dat <- read.csv("DMAI-2021-2022-compiled-dedup.csv")
-scopus_dat <- read.csv("Scopus/V4_results_20240126/Scopus_2021_2022_Results_20240126.csv")
-lens_dat <- read.csv("Lens/V2_results_20240123/Lens_2021_2022_Results_20240123.csv")
-aa_affil_dat <- read.csv("Academic Analytics/aa_fd_matches_articles_2021_2022.csv")
-wos_dat <- read.csv("WoS/V3_results_20240123/WoS_2021_2022_Results_20240123.csv")
+scopus_dat <- read.csv("Scopus/Output Files/Scopus_2021_2022_Results_20240126.csv")
+lens_dat <- read.csv("Lens/Output Files/Lens_2021_2022_Results_20240123.csv")
+aa_affil_dat <- read.csv("Academic Analytics/Output Files/aa_fd_matches_articles_2021_2022.csv")
+wos_dat <- read.csv("Web of Science/Output Files/WoS_2021_2022_Results_20240123.csv")
 
 ### SEPARATE DATA BASED ON DOI ### --------------------------------------------
 # Separate each df by records where DOI = NA
