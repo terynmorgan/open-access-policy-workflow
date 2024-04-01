@@ -69,13 +69,13 @@ Scopus_Lens_AA_WoS_dedup$Title <- str_to_title(Scopus_Lens_AA_WoS_dedup$Title) #
 ### EXPORT DEDUP RESULTS ### -------------------------------------------------------------------------------
 
 #Export files from Scopus, Lens, AA outer join with OAP
-write.csv(OAP_Scopus, "OAP Deduplication/20240202 Results/Scopus_notin_OAP_20240202.csv", row.names = FALSE)
-write.csv(OAP_Lens, "OAP Deduplication/20240202 Results/Lens_notin_OAP_20240202.csv", row.names = FALSE)
-write.csv(OAP_AA, "OAP Deduplication/20240202 Results/Academic_Analytics_notin_OAP_20240202.csv", row.names = FALSE)
-write.csv(OAP_WoS, "OAP Deduplication/20240202 Results/WoS_notin_OAP_20240202.csv", row.names = FALSE)
+write.csv(OAP_Scopus, "OAP Deduplication/Output Files/Scopus_notin_OAP_20240202.csv", row.names = FALSE)
+write.csv(OAP_Lens, "OAP Deduplication/Output Files/Lens_notin_OAP_20240202.csv", row.names = FALSE)
+write.csv(OAP_AA, "OAP Deduplication/Output Files/Academic_Analytics_notin_OAP_20240202.csv", row.names = FALSE)
+write.csv(OAP_WoS, "OAP Deduplication/Output Files/WoS_notin_OAP_20240202.csv", row.names = FALSE)
 
 # Export combination results
-write.csv(Scopus_Lens_AA_WoS_dedup, "OAP Deduplication/20240202 Results/Scopus_Lens_AA_WoS_notin_OAP_20240202.csv", row.names = FALSE)
+write.csv(Scopus_Lens_AA_WoS_dedup, "OAP Deduplication/Output Files/Scopus_Lens_AA_WoS_notin_OAP_20240202.csv", row.names = FALSE)
 
 ### CREATE DOI/TITLE LISTS ### -----------------------------------------------------------------------
 # Title list for venn comparison
