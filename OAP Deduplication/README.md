@@ -17,7 +17,7 @@ pacman::p_load(package_name, package_name, ...)
 - DMAI Deduplication/Output Files/**Academic_Analytics_notin_DMAI_20240123.csv** -> Csv file containing records from Academic Analytics that were not captured by DMAI  
 - DMAI Deduplication/Output Files/**WoS_notin_DMAI_20240123.csv** -> Csv file containing record from Web of Science payload that were not captured by DMAI  
 - DMAI Deduplication/Output Files/**Scopus_Lens_AA_WoS_notin_DMAI_20240123.csv** -> Csv file containing all records that were not captured by DMAI deduplicated by DOI/Title  
-- **OAP_deduplication.R** -> R script containing commands for OAP deduplication analysis
+- OAP Deduplication/**OAP_deduplication.R** -> R script containing commands for OAP deduplication analysis
 
 # Description
 The preprocess_OAP.R script merges duplicate columns in OAPcollectionMetadataExport-TRIMMED-20240126.csv and selects specific columns for export.  
