@@ -28,10 +28,10 @@ Scopus/Output Files/Scopus_2022_Results_20240126.csv -> Csv file containing dedu
 Scopus/Output Files/Scopus_2021_2022_Results_20240126.csv -> Csv file combining records from 2021/2022 results  
 
 # Results
-Total records before affiliation refinement = 9013 records
-- 2021 = 4661 records
-- 2022 = 4449 records 
+Total records before affiliation refinement = **9013** records
+- 2021 = **4661** records
+- 2022 = **4449** records 
 
-Total records after affiliation refinement = 4022 records
-- 2021 = 2014 records
-- 2022 = 2016 records
+Total records after affiliation refinement = **4022** records
+- 2021 = **2014** records
+- 2022 = **2016** records
