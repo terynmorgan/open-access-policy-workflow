@@ -16,7 +16,6 @@ pacman::p_load(package_name, package_name, ...)
 - DMAI Deduplication/Output Files/**Lens_notin_DMAI_20240123.csv** -> Csv file containing records in Lens payload that were not captured by DMAI  
 - DMAI Deduplication/Output Files/**Academic_Analytics_notin_DMAI_20240123.csv** -> Csv file containing records from Academic Analytics that were not captured by DMAI  
 - DMAI Deduplication/Output Files/**WoS_notin_DMAI_20240123.csv** -> Csv file containing record from Web of Science payload that were not captured by DMAI  
-- DMAI Deduplication/Output Files/**Scopus_Lens_AA_WoS_notin_DMAI_20240123.csv** -> Csv file containing all records that were not captured by DMAI deduplicated by DOI/Title  
 - OAP Deduplication/**OAP_deduplication.R** -> R script containing commands for OAP deduplication analysis
 
 # Description
@@ -24,6 +23,7 @@ The preprocess_OAP.R script merges duplicate columns in OAPcollectionMetadataExp
 The OAP_deduplication.R script performs outer joins between records from each database result file after DMAI deduplication and the processed OAP records. This functionality further refines the results of the DMAI deduplication and identifies records that were not captured within the OAP collections. The R script also generates 4 and 5-set venn diagrams to display the number of records shared between each database and the OAP collections. 
 
 # Output Files
+- OAP Deduplication/**OAP_Collection_Export_Processed.csv** -> Csv file containing processed records from OAPcollectionMetadataExport-TRIMMED-20240126.csv
 - OAP Deduplication/Output Files/**Scopus_notin_OAP_20240202.csv** -> Csv file containing records in Scopus payload that were not captured by DMAI or OAP collections  
 - OAP Deduplication/Output Files/**Lens_notin_OAP_20240202.csv** -> Csv file containing records in Lens payload that were not captured by DMAI or OAP collections  
 - OAP Deduplication/Output Files/**Academic_Analytics_notin_OAP_20240202.csv** -> Csv file containing records from Academic Analytics that were not captured by DMAI or OAP collections  
@@ -32,7 +32,7 @@ The OAP_deduplication.R script performs outer joins between records from each da
 - Venn Analysis/OAP Results/**OAP_Affiliation_DOI_Venn_Diagram.png** -> Png file displaying a 4-set venn diagram showing the number of shared records between databases using DOI  
 - Venn Analysis/OAP Results/**OAP_Affiliation_Title_Venn_Diagram.png** -> Png file displaying a 4-set venn diagram showing the number of shared records between databases using Title  
 - Venn Analysis/OAP Results/**OAP_Affiliation_5set_DOI_Venn_Diagram.png** -> Png file displaying a 5-set venn diagram showing the number of shared records between databases and the OAP collections using DOI  
-- Venn Analysis/OAP Results**/OAP_Affiliation_5set_Title_Venn_Diagram.png** -> Png file displaying a 5-set venn diagram showing the number of shared records between databases and the OAP collections using Title  
+- Venn Analysis/OAP Results/**OAP_Affiliation_5set_Title_Venn_Diagram.png** -> Png file displaying a 5-set venn diagram showing the number of shared records between databases and the OAP collections using Title  
 
 # Results
 The following table displays the results of database record extraction after filtering and DMAI/OAP deduplication:  
