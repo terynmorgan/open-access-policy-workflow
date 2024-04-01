@@ -2,7 +2,7 @@
 R version 4.3.1
 
 # Dependencies
-pacman, httr, jsonlite, xml2, dplyr, XML 
+pacman, httr, jsonlite, xml2, dplyr, XML  
 Clarivate Web of Science Starter API Token: 
 - https://developer.clarivate.com/apis/wos-starter
 - https://developer.clarivate.com/#getStarted
