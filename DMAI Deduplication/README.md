@@ -28,6 +28,8 @@ The R script performs outer joins between records from each database result file
 - DMAI Deduplication/Output Files/**Scopus_Lens_AA_WoS_notin_DMAI_20240123.csv** -> Csv file containing all records that were not captured by DMAI deduplicated by DOI/Title
 
 # Results
+Total records from DMAI 2021-2022 = **2952** records  
+
 The following table displays the results of database record extraction after filtering and DMAI deduplication:  
 | Database  | Previous Results (2021/2022) | Previous DMAI Deduplication) | Refined Results (2021/2022) | DMAI Deduplication |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
