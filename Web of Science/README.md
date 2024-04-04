@@ -34,9 +34,11 @@ Web of Science/Output Files/WoS_2022_Results_20240123.csv -> Csv file combining 
 
 # Results
 Total records before affiliation refinement = **3569 records**
-- 2021 = 1784 records
-- 2022 = 1785 records 
+- 2021 = **1784** records
+- 2022 = **1785** records
+-  **2884** records were not in DMAI
 
 Total records after affiliation refinement = **3018 records**
-- 2021 = 1506 records
-- 2022 = 1512 records
+- 2021 = **1506** records
+- 2022 = **1512** records
+- **2352** records were not DMAI
