@@ -11,15 +11,16 @@ The University Library conducts an annual review system to compile IUPUI faculty
 This project aimed to search large literature databases (Clarivate, Elsevier, Lens, Academic Analytics) to extract works authored by IUPUI faculty in 2021-2022 and deduplicated these works against those that have already been retrieved through the annual review system. 
 
 ## Steps of Development
-1. Compile and preprocess and files from the DMAI CrossRef Export: [documentation](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/DMAI%20CrossRef%20Export)
-2. Extract affiliated works from IUPUI faculty within 2021-2022 from large literature databases
+1. Individual files from the DMAI CrossRef Export were compiled and preprocessed: [documentation](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/DMAI%20CrossRef%20Export)
+2. Affiliated works from IUPUI faculty within 2021-2022 were extracted from large literature databases
 - [Academic Analytics](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/Academic%20Analytics)
 - [Lens](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/Lens)
 - [Scopus](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/Scopus)
 - [Web of Science](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/Web%20of%20Science)
-3. Deduplication with DMAI after CrossRef Lookup to identify records missed during the archival process: [documentation](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/DMAI%20Deduplication)
-4. Further deduplication with IUPUI's Open Access Policy (OAP) metadata collection from 1981-2024: [documentation](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/OAP%20Deduplication)
-5. Venn Analysis to visualize records shared between database results and DMAI/OAP collection tabularly and within venn diagrams: [documentation](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/Venn%20Analysis)
+3. Deduplication with DMAI after CrossRef Lookup was performed to identify records missed during the archival process: [documentation](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/DMAI%20Deduplication)
+4. The number of records extracted from these databases, which weren't contained within DMAI's annual audit, exceeded the Center's expectations. To limit the volume of extracted records, affiliation refinement was conducted and DMAI deduplication was performed on these refined records.
+5. Further deduplication with IUPUI's Open Access Policy (OAP) metadata collection from 1981-2024 was performed: [documentation](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/OAP%20Deduplication)
+6. Venn Analysis was conducted to visualize records shared between database results and DMAI/OAP collection tabularly and within venn diagrams: [documentation](https://github.com/terynmorgan/open-access-policy-workflow/tree/main/Venn%20Analysis)
 
 ## Required Files and Dependencies
 Contained within each development step's documentation 
