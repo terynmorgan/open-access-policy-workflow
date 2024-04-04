@@ -28,9 +28,11 @@ Lens/Output Files/Lens_2021_2022_Results_20240123.csv -> Csv file combining reco
 
 # Results
 Total records before affiliation refinement = **17296 records**
-- 2021 = 9330 records
-- 2022 = 8283 records 
+- 2021 = **9330** records
+- 2022 = **8283** records
+- **15401** records not in DMAI
 
 Total records after affiliation refinement = **5786 records**
-- 2021 = 2113 records
-- 2022 = 3673 records
+- 2021 = **2113** records
+- 2022 = **3673** records
+- **4592** records not in DMAI
