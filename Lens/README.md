@@ -14,10 +14,12 @@ pacman::p_load(package_name, package_name, ...)
 Lens/lens_affiliation_search.R -> R script containing commands for analysis 
 
 # Description
-The R script queries the Lens Scholary Works API for articles affiliated with IUPUI. ROR IDs were used for the affiliation search when available. For affiliations without a ROR ID, the Lens UI was used to variations of affiliaton names and those were used in an exact match in the query. Results were filtered for works within 2021-2022 and deduplicated on DOI/Title.
+The R script queries the Lens Scholary Works API for articles affiliated with IUPUI. ROR IDs were used for the affiliation search when available. For affiliations without a ROR ID, the Lens UI was used to variations of affiliaton names and those were used in an exact match in the query. Results were filtered for works within 2021-2022 and deduplicated on DOI/Title.  
+**Fields in Response:** Title, Journal Name, Publication Year, DOI, Document Type, OA Flag (T/F), OA Color
 
 ## Affiliation Refinement
 To refine the affiliations kept in the search query, affiliations in Lens/lens_ror_ids.xlsx where Keep? = Yes were included. 
+- *IUPUI, IUPUC, IUI, IU School of Medicine, IU Robert H. McKinney School of Law, IU School of Dentistry, IU School of Nursing, Regenstrief Institute, Richard L. Roudebush VAMC, IU Richard M. Fairbanks School of Public Health*
 
 # Output Files
 Lens/Output Files/Lens_2021_Results_20240123.csv -> Csv file containing deduplicated records from the 2021 Lens payload  
