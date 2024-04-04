@@ -18,6 +18,6 @@ Academic Analytics/Output Files/aa_fd_matches_articles_2021_2022.csv -> Csv file
 
 # Results
 Total records (deduplicated on Title and DOI) = **8921 records**
-- 2021 = 4607 records
-- 2022 = 4317 records
+- 2021 = **4607** records
+- 2022 = **4317** records
 - **5206** records were not in DMAI
