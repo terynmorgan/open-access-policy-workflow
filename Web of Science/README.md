@@ -17,12 +17,15 @@ pacman::p_load(package_name, package_name, ...)
 Web of Science/wos_affiliation_search.R -> R script containing commands for analysis 
 
 # Description
-The R script queries the Web of Science Starter API for articles affiliated with IUPUI. Results were filtered for works within 2021-2022 and deduplicated on DOI/Title.
+The R script queries the Web of Science Starter API for articles affiliated with IUPUI. Results were filtered for works within 2021-2022 and deduplicated on DOI/Title.  
+**Fields in Response:** Title, DOI, Document Type, Journal Name, Pub Year (OA Flag not available)
 
 ## Affiliation Refinement
-**Affiliations:**  IUPUI, Richard L Roudebush VA Medical Center, Regenstrief Institute Inc, Indiana University System, Walther Cancer Institute, Eskenazi Health  
+**Affiliations:**  
+- *IUPUI, Richard L Roudebush VA Medical Center, Regenstrief Institute Inc, Indiana University System, Walther Cancer Institute, Eskenazi Health*  
 
-**Refined Affiliations:**  IUPUI, Richard L Roudebush VA Medical Center, Regenstrief Institute Inc, Indiana University System 
+**Refined Affiliations:** 
+- *IUPUI, Richard L Roudebush VA Medical Center, Regenstrief Institute Inc, Indiana University System* 
 
 # Output Files
 Web of Science/Output Files/WoS_2021_2022_Results_20240123.csv -> Csv file containing deduplicated records from the 2021 Clarivate payload
